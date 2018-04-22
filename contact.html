@@ -63,8 +63,23 @@
           
           <h1 class="heading">Contact us</h2><br><br><br>
           <p>Reach us by <br> <br>
-         mailing us at info@thesandboxproject.in <br><br> Calling us at +91 7021381585<br><br> Messaging us on our Social Media Handles </p>
+         mailing us at info@thesandboxproject.in <br><br> Calling us at +91 7021381585<br><br> Messaging us on our Social Media Handles <br><br> or Follow directions using the map</p>
           <br><br>
+           <div id="map" style="align-content: space-around; width:50%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(19.019374, 73.014578);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWn800xWEaYB1UxlOe_cggAdWyM1xEii0&callback=myMap"></script>
+
           
         </div>
         
